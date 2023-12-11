@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition-duration: 250ms;
+
+  padding: 9px;
+  width: calc(100% - 20px);
+}
+
+.text {
+  overflow: hidden;
+  transition-duration: 250ms;
+  margin: 0 !important;
+  text-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+.icon {
+  font-size: 32px !important;
+}
+
+.container:hover .icon {
+  color: white !important;
+}
+
+.container:hover .text {
+  color: white !important;
+}

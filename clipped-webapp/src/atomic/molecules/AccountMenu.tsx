@@ -72,14 +72,14 @@ export default function AccountMenu({ image }: { image: string }) {
       >
         <MenuItem
           onClick={() => {
-            navigate("/app/settings");
+            navigate("/app/preferences");
             handleClose();
           }}
         >
           <ListItemIcon>
             <Settings fontSize="small" />
           </ListItemIcon>
-          Settings
+          Preferences
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
