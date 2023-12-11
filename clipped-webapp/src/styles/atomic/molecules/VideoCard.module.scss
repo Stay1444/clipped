@@ -1,0 +1,86 @@
+$width: 350px;
+$thumbnailHeight: calc(($width * 9) / 16);
+
+.parent {
+  width: $width;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.thumbnail {
+  overflow: hidden;
+  width: $width;
+  height: $thumbnailHeight;
+  border-radius: 10px !important;
+
+  & > img {
+    object-fit: object-fit;
+    max-width: &width;
+    max-height: $thumbnailHeight;
+  }
+}
+
+.detailsContainer {
+  padding: 5px;
+}
+
+.videoName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.thumbnailWrapper {
+  position: relative;
+}
+
+.thumbnailLayer {
+  width: $width;
+  height: $thumbnailHeight;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.duration {
+  bottom: 10px;
+  right: 10px;
+}
+
+.size {
+  top: 10px;
+  left: 10px;
+}
+
+.thumbnailDecoration {
+  position: absolute;
+  padding: 4px 8px 4px 8px;
+  font-size: 12px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 100px 50px #333333bf;
+  border-radius: 50%;
+  padding: 0;
+  padding: 20px;
+  right: -12px;
+  top: -10px;
+  background: #33333380;
+  transition-duration: 250ms;
+
+  opacity: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.parent:hover .options {
+  opacity: 1;
+}

@@ -1,0 +1,5 @@
+url: http://localhost:5000
+oauth:
+  client_id: 1183025846173319168
+  client_secret: i6WFh_vZ6b0CwAJW6clwilFiqJkJe8wo
+  discord_api_url: https://discord.com/api/

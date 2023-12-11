@@ -1,0 +1,39 @@
+.container {
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.close {
+    margin-left: auto;
+    cursor: pointer;
+    color: transparent;
+    transition-duration: 250ms;
+}
+
+.content:hover .close {
+    color: gray;
+}
+
+.close:hover {
+    color: white !important;
+}
+
+@keyframes closeTimerShrink {
+  from { width: 100%; }
+  to { width: 0px; }
+}
+
+.closeTimer {
+    margin-top: auto;
+    width: 100%;
+    height: 1px;
+    animation-name: closeTimerShrink;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
