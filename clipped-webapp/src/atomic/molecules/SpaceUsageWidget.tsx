@@ -3,7 +3,7 @@ import { Box, LinearProgress, Typography, useTheme } from "@mui/material";
 import { formatSize } from "../../utils";
 
 export default function SpaceUsageWidget() {
-  const used = 1200 * 1024 * 1024 * 1024;
+  const used = 300 * 1024 * 1024 * 1024;
   const total = 1000 * 1024 * 1024 * 1024;
   const usedPercent = Math.min(Math.max(used / total, 0), 1);
   const theme = useTheme();

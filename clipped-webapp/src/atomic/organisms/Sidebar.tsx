@@ -9,7 +9,7 @@ const CollapsedWidth = 70;
 const ExpandedWidth = 300;
 
 export default function Sidebar() {
-  const [mode, setMode] = useLocalStorage<Mode>("Auto");
+  const [mode, setMode] = useLocalStorage<Mode>("SIDEBAR_MODE", "Auto");
 
   const [expanded, setExpanded] = useState<boolean>(false);
 
